@@ -1,7 +1,14 @@
-//your JS code here. If required.
-let browser = navigator.appName;
-let version = navigator.appName;
-let browserInfo =  'You are using' + browser + 'version' + version.
+document.addEventListener('DOMContentLoaded', function() {
+  // Get browser information from the navigator object
+  var browserName = navigator.appName;
+  var browserVersion = navigator.appVersion;
 
-	let browserInfoDiv = document.getElementById("browser-info");
-    browserInfoDiv.textContent = browserInfo;
+  // Display browser information in the specified format
+  var browserInfo = "You are using " + browserName + " version " + browserVersion;
+
+  // Find the div element with id "browser-info"
+  var browserInfoDiv = document.getElementById('browser-info');
+
+  // Update the content of the div with the browser information
+  browserInfoDiv.textContent = browserInfo;
+});
